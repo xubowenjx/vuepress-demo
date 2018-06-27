@@ -1,0 +1,17 @@
+{
+  "name": "vuepress-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "author": "xubowen",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^0.10.2"
+  }
+}
