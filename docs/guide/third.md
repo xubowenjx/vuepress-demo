@@ -3,4 +3,4 @@ title: Third page
 author: xubowen
 ---
 # Third page
-![风景](/fenj1.jpg)
+![风景](/images/fenj1.jpg)

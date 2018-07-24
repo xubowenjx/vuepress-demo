@@ -1,5 +1,10 @@
 module.exports = {
-    title: 'Hello VuePress',
+    host:'172.21.64.75',
+    head: [
+        ['link', { rel: 'icon', href: '/logo.ico' }]
+      ],
+    title: 'Hello',
+    dest:'dist',
     description: 'Just playing around',
    // theme:'foo'
    themeConfig: {

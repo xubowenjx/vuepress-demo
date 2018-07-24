@@ -26,7 +26,7 @@
         height: 100%;
         line-height: 200px;
         vertical-align: middle;
-        top: -1000px;
+        top: -100000px;
         border: 1px solid #de4ffd;
         background-color: rgba(86, 61, 124, 0.1);
         text-align: center;
