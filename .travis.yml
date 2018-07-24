@@ -18,7 +18,7 @@ script:
  
 after_script:
   - cp favicon.ico docs/favicon.ico
-  - cd ./docs
+  - cd ./dist
   - git init
   - git config user.name "xubowenjx"
   - git config user.email "286129936@qq.com"
