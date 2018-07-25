@@ -1,5 +1,6 @@
 module.exports = {
     host:'172.21.64.75',
+    base:'/vuepress-demo/',
     head: [
         ['link', { rel: 'icon', href: '/logo.ico' }]
       ],
