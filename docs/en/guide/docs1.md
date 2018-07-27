@@ -1,19 +1,8 @@
 ---
-title: 文档
+title: Docs
 author: xubowen
 ---
 # 复杂流程设计
-
-目录
-
-| 1.脚本节点        1 |
-| --- |
-| 2.流程权限控制        2 |
-| 3.注意事项        5 |
-| |
-
-
-
 ## 1.脚本节点
 
  作用:动态决定流程走向具体的路由节点
@@ -74,23 +63,19 @@ author: xubowen
 
 入参如下，过程名随意。出参必须为Y或者N
 
-PROCEDURE p\_xbw\_bpm(appno        INVARCHAR2,
-
-                                           categorycode INVARCHAR2,
-
-                                                processno    INVARCHAR2,
-
-                                                resultout    OUTVARCHAR2);
+```sql
+PROCEDURE p_xbw_bpm(appno INVARCHAR2,
+                    categorycode INVARCHAR2,
+                    processno    INVARCHAR2,
+                    resultout    OUTVARCHAR2);
+```
 
 3.流程权限控制脚本开发规范
 
 入参如下，过程名随意。出参必须为Y或者N
-
-PROCEDURE p\_xbw\_bpm1(appno INVARCHAR2,
-
-                                                resultout OUTVARCHAR2);
-
-
+```sql
+PROCEDURE p_xbw_bpm1(appno INVARCHAR2, resultout OUTVARCHAR2);
+```
 
 4.流程条件控制说明
 
