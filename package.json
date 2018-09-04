@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "repository":"https://github.com/xubowenjx/vuepress-demo.git",
+  "repository": "https://github.com/xubowenjx/vuepress-demo.git",
   "scripts": {
     "start": "vuepress dev docs",
     "build": "vuepress build docs",

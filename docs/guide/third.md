@@ -1,7 +1,0 @@
----
-title: 第三个界面
-author: xubowen
----
-# Third page
-<i-image :src="$withBase('/images/fenj1.jpg')" alt="风景"/>
-<img :src="$withBase('/images/fenj1.jpg')" alt="风景">
