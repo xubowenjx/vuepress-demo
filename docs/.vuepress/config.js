@@ -4,9 +4,12 @@ let locales = require('./utils')
 module.exports = {
   // host: '172.21.64.75',
   base: '/vuepress-demo/',
+  theme: 'craftdocs',
   evergreen: true,
-  head: [['link', { rel: 'icon', href: '/logo.ico' }]],
-  title: 'Hello',
+  head: [
+    ['link', { rel: 'icon', href: '/images/favicon-16x16.png', sizes: '16*16' }]
+  ],
+  title: 'Help Docs',
   dest: 'dist',
   description: 'Just playing around',
   locales: {
@@ -28,9 +31,23 @@ module.exports = {
   },
   // theme:'foo'
   themeConfig: {
+    codeLanguages: {
+      js: 'javascript',
+      html: 'html',
+      vue: 'vue',
+      java: 'java',
+      sql: 'sql'
+    },
     displayAllHeaders: true,
     sidebarDepth: 3,
     locales: locales
+  },
+  markdown: {
+    anchor: { level: [2, 3] },
+    config(md) {
+      let markup = require('vuepress-theme-craftdocs/markup')
+      md.use(markup)
+    }
   },
   configureWebpack: (config, isServer) => {
     if (!isServer) {

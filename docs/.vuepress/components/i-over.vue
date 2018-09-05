@@ -6,8 +6,8 @@
       position: relative;
       width: 200px;
       height: 200px;
-      top: 100px;
-      left: 200px;
+      /* top: 100px;
+      left: 200px; */
       display: inline-block;
     }
     div.box {

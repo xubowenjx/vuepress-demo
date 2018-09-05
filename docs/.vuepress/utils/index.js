@@ -77,6 +77,7 @@ function main() {
     }
     ret[k] = result
   }
+  console.log(JSON.stringify(ret))
   return ret
 }
 
