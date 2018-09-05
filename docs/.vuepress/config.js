@@ -3,7 +3,7 @@ let locales = require('./utils')
 
 module.exports = {
   // host: '172.21.64.75',
-  //base: '/vuepress-demo/',
+  base: '/vuepress-demo/',
   evergreen: true,
   head: [['link', { rel: 'icon', href: '/logo.ico' }]],
   title: 'Hello',
