@@ -3,11 +3,16 @@ let locales = require('./utils')
 
 module.exports = {
   // host: '172.21.64.75',
+  //base: '/web/docs/',
   base: '/vuepress-demo/',
   theme: 'craftdocs',
   evergreen: true,
   head: [
-    ['link', { rel: 'icon', href: '/images/favicon-16x16.png', sizes: '16*16' }]
+    [
+      'link',
+      { rel: 'icon', href: '/images/favicon-16x16.png', sizes: '16*16' }
+    ],
+    ['link', { rel: 'stylesheet', href: '/style.css' }]
   ],
   title: 'Help Docs',
   dest: 'dist',
@@ -31,6 +36,7 @@ module.exports = {
   },
   // theme:'foo'
   themeConfig: {
+    //collapsable:false,
     codeLanguages: {
       js: 'javascript',
       html: 'html',
@@ -38,7 +44,7 @@ module.exports = {
       java: 'java',
       sql: 'sql'
     },
-    displayAllHeaders: true,
+    displayAllHeaders: false,
     sidebarDepth: 3,
     locales: locales
   },
