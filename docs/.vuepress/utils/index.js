@@ -31,7 +31,9 @@ function logPath(type, _path) {
   if (type === 'dir') {
     _path_ += '/'
   }
-
+  if (_path.indexOf('operate') > -1) {
+    return
+  }
   let b = belongTo(_path_)
 
   if (b in fileMapper) {
@@ -121,8 +123,8 @@ function generateConfig(lp, config) {
           }
         })
       }
-    }),
-    sidebar: sidebar
+    })
+    //sidebar: sidebar
   }
   return ret
 }

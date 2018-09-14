@@ -2,9 +2,10 @@
 let locales = require('./utils')
 
 module.exports = {
-  // host: '172.21.64.75',
+  host: '172.21.64.35',
+  port: 8090,
   //base: '/web/docs/',
-  base: '/vuepress-demo/',
+  base: '/help-docs/',
   theme: 'craftdocs',
   evergreen: true,
   head: [
@@ -25,8 +26,8 @@ module.exports = {
     },
     '/en/': {
       lang: 'en-US',
-      title: 'Help docs',
-      description: 'Just playing around'
+      title: 'Help docs'
+      // description: 'Just playing around'
     },
     '/ru/': {
       lang: 'ru-RU',
@@ -44,6 +45,7 @@ module.exports = {
       java: 'java',
       sql: 'sql'
     },
+    sidebar: 'auto',
     displayAllHeaders: false,
     sidebarDepth: 3,
     locales: locales
