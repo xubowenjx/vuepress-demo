@@ -2,10 +2,11 @@
 let locales = require('./utils')
 
 module.exports = {
-  host: '172.21.64.35',
-  port: 8090,
+  //  host: '172.21.64.35',
+  // port: 8090,
+  base: '/vuepress-demo/',
   //base: '/web/docs/',
-  base: '/help-docs/',
+  //base: '/help-docs/',
   theme: 'craftdocs',
   evergreen: true,
   head: [
