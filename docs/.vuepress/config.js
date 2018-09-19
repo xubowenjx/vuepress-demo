@@ -69,7 +69,9 @@ module.exports = {
       .test(/\.md$/)
       .use('ls-loader')
       .loader('ls-loader')
-      .options({})
+      .options({
+        prepath: 'xbw'
+      })
       .end()
   }
 }
