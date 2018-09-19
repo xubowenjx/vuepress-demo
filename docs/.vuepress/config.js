@@ -2,11 +2,11 @@
 let locales = require('./utils')
 
 module.exports = {
-  //  host: '172.21.64.35',
+  host: '172.21.64.35',
   // port: 8090,
-  base: '/vuepress-demo/',
+  //base: '/vuepress-demo/',
   //base: '/web/docs/',
-  //base: '/help-docs/',
+  base: '/help-docs/',
   theme: 'craftdocs',
   evergreen: true,
   head: [
@@ -52,14 +52,24 @@ module.exports = {
     locales: locales
   },
   markdown: {
-    anchor: { level: [2, 3] },
+    anchor: { level: [2, 3, 4] },
     config(md) {
-      let markup = require('vuepress-theme-craftdocs/markup')
-      md.use(markup)
+      //let markup = require('vuepress-theme-craftdocs/markup')
+      // md.use(markup)
     }
   },
   configureWebpack: (config, isServer) => {
     if (!isServer) {
     }
+  },
+  //添加自己写的loader
+  chainWebpack: config => {
+    config.module
+      .rule('markdown')
+      .test(/\.md$/)
+      .use('ls-loader')
+      .loader('ls-loader')
+      .options({})
+      .end()
   }
 }
