@@ -12,7 +12,7 @@
 
 [电能表产品目录维护](operate/meterdir.docx#cccccccc)
 
-[互感器产品目录维护](operate/itdir.doc#xxx)
+[互感器产品目录维护](operate/itdir.docx#xxx)
 
 [首页](../mdm/test.doc#SECTION)
 

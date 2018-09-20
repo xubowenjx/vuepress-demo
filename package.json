@@ -8,12 +8,15 @@
     "start": "vuepress dev docs",
     "build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docx": "node doc2md/index.js"
   },
   "author": "xubowen",
   "license": "MIT",
   "dependencies": {
-    "@vue/cli-service": "^3.0.3"
+    "@vue/cli-service": "^3.0.3",
+    "mammoth": "^1.4.6",
+    "turndown": "^5.0.1"
   },
   "devDependencies": {
     "ls-loader": "^1.0.2",

@@ -31,3 +31,23 @@ into it .
 then copy the language you want souces outside .
 change the default-language.js content as you want
 the config.js#locales also should modify ,the default as '/',
+
+## word to md
+
+the word dir contains docx (yes,must be docx ,not doc),and run the bash:
+
+```bash
+npm run docx
+```
+
+will convert the docx to mardkdown
+
+## ls-loader
+
+In docx file ,you can use the syntax
+
+```code
+[file description](path-to-docx#section)
+```
+
+with ls-loader , it will be convert to html link
