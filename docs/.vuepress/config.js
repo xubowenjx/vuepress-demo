@@ -5,7 +5,7 @@ module.exports = {
   //host: '172.21.64.35',
   // port: 8090,
   base: '/vuepress-demo/',
-  //base: '/web/docs/',
+  //base: '/amber2_server/docs/',
   //base: '/help-docs/',
   theme: 'craftdocs',
   evergreen: true,
@@ -22,8 +22,8 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '帮助文档',
-      description: '中文首页描述内容'
+      title: '帮助文档1',
+      description: '中文首页描述内容1'
     },
     '/en/': {
       lang: 'en-US',
@@ -54,15 +54,15 @@ module.exports = {
   markdown: {
     anchor: { level: [2, 3, 4] },
     config(md) {
-      //let markup = require('vuepress-theme-craftdocs/markup')
-      // md.use(markup)
+      let markup = require('vuepress-theme-craftdocs/markup')
+      md.use(markup)
     }
   },
   configureWebpack: (config, isServer) => {
     if (!isServer) {
     }
   },
-  //添加自己写的loader
+  //添加loader ,https://github.com/xubowenjx/ls-loader
   chainWebpack: config => {
     config.module
       .rule('markdown')
@@ -70,7 +70,7 @@ module.exports = {
       .use('ls-loader')
       .loader('ls-loader')
       .options({
-        prepath: 'xbw'
+        prepath: ''
       })
       .end()
   }
