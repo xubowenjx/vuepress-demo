@@ -24,7 +24,7 @@ function readDirSync(path) {
     if (info.isDirectory()) {
       readDirSync(path + '/' + ele)
     } else {
-      fileList.push(path + '/' + ele)
+      ele.endsWith("docx") && fileList.push(path + '/' + ele)
     }
   })
 }

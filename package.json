@@ -7,8 +7,6 @@
   "scripts": {
     "start": "vuepress dev docs",
     "build": "vuepress build docs",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
     "docx": "node doc2md/index.js"
   },
   "author": "xubowen",
@@ -19,7 +17,7 @@
     "turndown": "^5.0.1"
   },
   "devDependencies": {
-    "ls-loader": "^1.0.2",
+    "ls-loader": "1.04",
     "vuepress": "^0.12.0",
     "vuepress-theme-craftdocs": "^1.3.3"
   }
