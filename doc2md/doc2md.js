@@ -31,6 +31,7 @@ function readDirSync(path) {
 function convertAll(dir) {
   readDirSync(dir)
   fileList.forEach(file => {
+    //将docx的名字中的空格替换成-
     let output = file.replace(/\s+/g, '-').replace(/doc[x]?\b/, 'md')
     convert(file, output)
   })
